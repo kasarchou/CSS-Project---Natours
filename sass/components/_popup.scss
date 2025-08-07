@@ -11,6 +11,15 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  backdrop-filter: blur(10px);
+
+  @supports (
+    (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))
+  ) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: $color-black, $alpha: 0.3);
+  }
 
   &__content {
     @include absCenter;
@@ -28,6 +37,14 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(tab-land) {
+      align-content: center;
+    }
   }
 
   &__right {
@@ -35,6 +52,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -59,6 +80,11 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+      column-count: 1;
+    }
   }
 
   /// Open states
