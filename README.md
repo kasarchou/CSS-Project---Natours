@@ -43,7 +43,7 @@ A simple yet expressive CSS project created to deepen mu understanding of CSS fu
 3. (Optional) Install dependencies and run build scripts provided in `package.json`:
    ```bash
    npm install
-   npm run build  # adjust to your actual script names
+   npm run build:css
    ```
 
 4. Open `index.html` in your browser to view the page.
