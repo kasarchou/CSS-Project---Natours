@@ -6,6 +6,7 @@ A simple yet expressive CSS project created to deepen mu understanding of CSS fu
 
 ## Table of Contents
 
+- [Demo](#demo)
 - [About](#about)  
 - [Technologies Used](#technologies-used)  
 - [Getting Started](#getting-started)  
@@ -16,6 +17,11 @@ A simple yet expressive CSS project created to deepen mu understanding of CSS fu
 - [License](#license)
 
 ---
+
+## Demo
+
+![Natours Demo](demo.gif)
+
 
 ## About
 
